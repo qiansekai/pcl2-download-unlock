@@ -1,0 +1,14 @@
+# 反编译与中间产物（体积大、可重建）
+_work/
+
+# .NET 构建产物
+tools/**/bin/
+tools/**/obj/
+
+# 二进制产物（由 apply-patch.ps1 从原始 exe 重建，不入库）
+patch/*.exe
+*.patched.exe
+
+# 本地临时
+*.log
+*.tmp
